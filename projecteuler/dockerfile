@@ -1,0 +1,20 @@
+FROM python:3.12.3
+
+RUN echo "Creating working dir and copying files"
+RUN mkdir /app
+WORKDIR /app
+COPY . .
+
+RUN apt-get update
+RUN apt-get autoremove -y 
+RUN apt-get autoclean -y
+RUN apt-get upgrade
+
+# update pip globally within the container
+RUN python3 -m pip install --upgrade pip
+# download dependencies to the image and container
+RUN python3 -m pip install -r requirements.txt
+
+RUN bash bin/make_primes.sh
+
+CMD [ "uvicorn", "main:app", "--host", "0.0.0.0"]

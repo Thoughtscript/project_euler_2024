@@ -1,0 +1,7 @@
+services:
+  projecteuler:
+    build:
+      context: ./projecteuler
+      dockerfile: dockerfile
+    ports:
+      - '8000:8000'
