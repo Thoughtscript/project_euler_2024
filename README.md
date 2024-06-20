@@ -4,9 +4,9 @@
 
 ![Badge](https://projecteuler.net/profile/Thoughtscript.png)
 
-My Project Euler Solutions.
+My Project Euler solutions.
 
-Now with Docker, better standardization, optimization, validation of compatibility with Python 3.12+, vastly reduced file-sizes, and so on.
+Now with Docker, better standardization, optimization, improved logging, timing, validation of compatibility with Python 3.12+, vastly reduced file-sizes, and so on.
 
 > Deprecated: https://github.com/Thoughtscript/_project_euler
 
@@ -16,6 +16,16 @@ Now with Docker, better standardization, optimization, validation of compatibili
 docker-compose up
 ```
 
+Static File Server:
+
 > http://localhost:8000/public/index.html
 
+Execute the Solutions within the container:
+
 > http://localhost:8000/api/execute?problem=30
+
+Execute the Solutions locally :
+```bash
+cd projecteuler/solutions
+python3 project_euler_11.py
+```
