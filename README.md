@@ -24,7 +24,7 @@ Project Euler recommends that solutions be able to run in a `~2-3-minute` timefr
 
 > You can also see the outputs [here](/projecteuler/solutions/out) along with the actual runtimes that you can verify locally.
 
-Static File Server to eventually display like: 
+Static File Server to eventually display results like [Stephan Brumme](https://euler.stephan-brumme.com/) and detailed breakdowns like [Martin Ueding](https://martin-ueding.de/posts/project-euler-solution-70-totient-permutation/): 
 
 > http://localhost:8000/public/index.html
 
