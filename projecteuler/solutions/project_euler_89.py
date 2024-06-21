@@ -172,7 +172,7 @@ if __name__ == '__main__':
         def solve():
             ALGO_BEGIN = time.time()
 
-            data = init('data/project_euler_89_input.txt')
+            data = init('project_euler_89_input.txt')
             result = 0
 
             for x in range(0, len(data), 1):

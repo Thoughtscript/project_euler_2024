@@ -42,6 +42,8 @@ python3 project_euler_11.py
 
 Make Primes locally:
 ```bash
-python3 _make_and_print_primes.py --max_num 700000000 --file_name primes_to_700_mil
 python3 _make_and_print_primes.py --max_num 2000000 --file_name primes_to_2_mil
+python3 _make_and_print_primes.py --max_num 50000000 --file_name primes_to_50_mil
+python3 _make_and_print_primes.py --max_num 100000000 --file_name primes_to_100_mil
+python3 _make_and_print_primes.py --max_num 700000000 --file_name primes_to_700_mil
 ```

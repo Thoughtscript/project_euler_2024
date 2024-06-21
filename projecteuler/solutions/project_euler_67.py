@@ -22,13 +22,13 @@ if __name__ == '__main__':
 
             return result_arr
 
-        DATA = parse('data/project_euler_67_input.txt')
+        DATA = parse('project_euler_67_input.txt')
 
         def check_below(r, c):
             next_row = r + 1
             same_col = c
             next_col = c + 1
-            DATA[r][c] =  DATA[r][c] + max(DATA[next_row][same_col], DATA[next_row][next_col])
+            DATA[r][c] = DATA[r][c] + max(DATA[next_row][same_col], DATA[next_row][next_col])
 
         def solve():
             ALGO_BEGIN = time.time()
