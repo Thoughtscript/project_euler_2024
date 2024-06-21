@@ -123,7 +123,7 @@ def load_txt_file_as_list(file_name, do_print=False):
 STDOUT
 '''
 
-def initialize(problem = -1, expected = -1, actual = -1, duration = 0, output = []):
+def initialize(problem = -1, expected = -1, actual = -1, duration = 0, output = [], passed = False):
     output.append("Running solution for problem: " + str(problem))
     output.append("Expected result: " + str(expected))
 
@@ -132,7 +132,8 @@ def initialize(problem = -1, expected = -1, actual = -1, duration = 0, output = 
         "expected": expected, 
         "actual": actual, 
         "duration": duration, 
-        "output": output
+        "output": output,
+        "passed": passed,
     }
 
 def msg(result, message):
@@ -143,5 +144,17 @@ def conclude(result, solution, begin):
     msg(result, "Solution found: " + str(solution))
     result['actual'] = solution
     result['duration'] = ALGO_END - begin
+    result['passed'] = result['actual'] == result['expected']
     print(result)
 
+'''
+LIST HELPER
+'''
+
+def sum_list(lst):
+    total = 0
+
+    for x in range(0, len(lst), 1):
+        total += int(lst[x])
+
+    return total

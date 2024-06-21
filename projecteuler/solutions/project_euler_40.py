@@ -4,9 +4,9 @@ import time
 
 if __name__ == '__main__':
 
-    result = initialize(40, 210, 0, 0, [])
-
     try:
+
+        result_data = initialize(40, 210, 0, 0, [])
 
         def solve():
             ALGO_BEGIN = time.time()
@@ -26,17 +26,17 @@ if __name__ == '__main__':
             F = decimal_str[100000-1]
             G = decimal_str[1000000-1]
 
-            msg(result, "A: " + str(A))
-            msg(result, "B: " + str(B))
-            msg(result, "C: " + str(C))
-            msg(result, "D: " + str(D))
-            msg(result, "E: " + str(E))
-            msg(result, "F: " + str(F))
-            msg(result, "G: " + str(G))
+            msg(result_data, "A: " + str(A))
+            msg(result_data, "B: " + str(B))
+            msg(result_data, "C: " + str(C))
+            msg(result_data, "D: " + str(D))
+            msg(result_data, "E: " + str(E))
+            msg(result_data, "F: " + str(F))
+            msg(result_data, "G: " + str(G))
 
             solution = int(A) *int(B) * int(C) * int(D) * int(E) * int(F) * int(G)
 
-            conclude(result, solution, ALGO_BEGIN)
+            conclude(result_data, solution, ALGO_BEGIN)
 
         solve() # 210
 

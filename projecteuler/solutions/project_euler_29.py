@@ -4,9 +4,9 @@ import time
 
 if __name__ == '__main__':
 
-    result = initialize(29, 9183, 0, 0, [])
-
     try:
+
+        result_data = initialize(29, 9183, 0, 0, [])
 
         def solve():
             ALGO_BEGIN = time.time()
@@ -20,8 +20,8 @@ if __name__ == '__main__':
 
             solution = len(hm.values())
 
-            msg(result, str(solution) + " distinct values")
-            conclude(result, solution, ALGO_BEGIN)
+            msg(result_data, str(solution) + " distinct values")
+            conclude(result_data, solution, ALGO_BEGIN)
 
         solve() # 9183
 

@@ -6,10 +6,10 @@ if __name__ == '__main__':
 
     try:
 
-        result = initialize(11, 70600674, 0, 0, [])
+        result_data = initialize(11, 70600674, 0, 0, [])
 
         def left_right(grid, r, c):
-            # msg(result, "Left-Right for: " + str(grid[r][c]))
+            # msg(result_data, "Left-Right for: " + str(grid[r][c]))
             min = c - 3
             max = c + 3
 
@@ -33,7 +33,7 @@ if __name__ == '__main__':
 
                 arr.pop(0)
                 arr.append(grid[r][counter])
-                # msg(result, "Arr: " + str(arr) + " Product: " + str(product))
+                # msg(result_data, "Arr: " + str(arr) + " Product: " + str(product))
 
                 counter = counter + 1
                 if mx < product:
@@ -42,7 +42,7 @@ if __name__ == '__main__':
             return mx
 
         def up_down(grid, r, c):
-            # msg(result, "Up-Down for: " + str(grid[r][c]))
+            # msg(result_data, "Up-Down for: " + str(grid[r][c]))
             min = r - 3
             max = r + 3
 
@@ -57,7 +57,7 @@ if __name__ == '__main__':
             mx = product
 
             arr = [grid[min][c], grid[min+1][c], grid[min+2][c], grid[min+3][c]]
-            # msg(result, "Arr: " + str(arr) + " Product: " + str(product))
+            # msg(result_data, "Arr: " + str(arr) + " Product: " + str(product))
 
             while (counter <= max):
                 if int(grid[counter-3][c]) > 0:
@@ -66,7 +66,7 @@ if __name__ == '__main__':
 
                 arr.pop(0)
                 arr.append(grid[counter][c])
-                # msg(result, "Arr: " + str(arr) + " Product: " + str(product))
+                # msg(result_data, "Arr: " + str(arr) + " Product: " + str(product))
 
                 counter = counter + 1
                 if mx < product:
@@ -110,7 +110,7 @@ if __name__ == '__main__':
 
         def diags(grid, r, c):
             mx = 0
-            # msg(result, "Diags for: " + str(grid[r][c]))
+            # msg(result_data, "Diags for: " + str(grid[r][c]))
             r_min = r - 3
             r_max = r + 3
             c_min = c - 3
@@ -131,7 +131,7 @@ if __name__ == '__main__':
 
                 arr = [grid[r_min][c_min], grid[r_min+1][c_min+1],
                        grid[r_min+2][c_min+2], grid[r_min+3][c_min+3]]
-                # msg(result, "Arr: " + str(arr) + " Product: " + str(product))
+                # msg(result_data, "Arr: " + str(arr) + " Product: " + str(product))
 
                 while (r_counter <= r_max and c_counter <= c_max):
                     if int(grid[r_counter-3][c_counter-3]) > 0:
@@ -140,7 +140,7 @@ if __name__ == '__main__':
 
                     arr.pop(0)
                     arr.append(grid[r_counter][c_counter])
-                    # msg(result, "Arr: " + str(arr) + " Product: " + str(product))
+                    # msg(result_data, "Arr: " + str(arr) + " Product: " + str(product))
 
                     r_counter = r_counter + 1
                     c_counter = c_counter + 1
@@ -166,10 +166,10 @@ if __name__ == '__main__':
                 c_counter = c_min-4
 
                 if mx < product:
-                        mx = product
+                    mx = product
 
                 arr = [grid[r_min][c_min], grid[r_min+1][c_min-1], grid[r_min+2][c_min-2], grid[r_min+3][c_min-3]]
-                # msg(result, "Arr: " + str(arr) + " Product: " + str(product))
+                # msg(result_data, "Arr: " + str(arr) + " Product: " + str(product))
 
                 while (r_counter <= r_max and c_counter >= c_max):
                     if int(grid[r_counter-3][c_counter+3]) > 0:
@@ -178,7 +178,7 @@ if __name__ == '__main__':
 
                     arr.pop(0)
                     arr.append(grid[r_counter][c_counter])
-                    # msg(result, "Arr: " + str(arr) + " Product: " + str(product))
+                    # msg(result_data, "Arr: " + str(arr) + " Product: " + str(product))
 
                     r_counter = r_counter + 1
                     c_counter = c_counter - 1
@@ -193,16 +193,16 @@ if __name__ == '__main__':
             mx = 0
             for r in range(0, len(grid), 1):
                 for c in range(0, len(grid[0]), 1):
-                    # msg(result, "Row: " + str(r) + " Col: " + str(c) + " Val: " + str(grid[r][c]))
+                    # msg(result_data, "Row: " + str(r) + " Col: " + str(c) + " Val: " + str(grid[r][c]))
 
                     A = left_right(grid, r, c)
                     B = up_down(grid, r, c)
                     C = diags(grid, r, c)
 
-                    # msg(result, "Left-Right: " + str(A) + " Up-Down: " + str(B) + " Diags: " + str(C))
+                    # msg(result_data, "Left-Right: " + str(A) + " Up-Down: " + str(B) + " Diags: " + str(C))
                     mx = max(A, B, C, mx)
 
-            conclude(result, mx, ALGO_BEGIN)
+            conclude(result_data, mx, ALGO_BEGIN)
 
         solve(load_json_file('data/project_euler_11_data'))
 

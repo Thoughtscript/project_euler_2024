@@ -4,9 +4,9 @@ import time
 
 if __name__ == '__main__':
 
-    result = initialize(30, 443839, 0, 0, [])
-
     try:
+
+        result_data = initialize(30, 443839, 0, 0, [])
 
         # Note sum of x power does not imply 
         # that the number in question be length x!!
@@ -14,14 +14,14 @@ if __name__ == '__main__':
         def check_string(num, exp):
             num_as_str = str(num)
             total = 0
-            solution = []
+            result = []
             for x in range(0, len(num_as_str), 1):
                 val = pow(int(num_as_str[x]), exp)
-                solution.append(val)
+                result.append(val)
                 total = total + val
 
             if total == num:
-                msg(result, "Sum of " + str(exp) + " powers found " + str(num))
+                msg(result_data, "Sum of " + str(exp) + " powers found " + str(num))
 
             return [total == num, total]
 
@@ -36,7 +36,7 @@ if __name__ == '__main__':
                     if check[1] > 1:
                         sum = sum + check[1]
 
-            conclude(result, sum, ALGO_BEGIN)
+            conclude(result_data, sum, ALGO_BEGIN)
 
         solve(0, 1000000, 5) # 443839
 
