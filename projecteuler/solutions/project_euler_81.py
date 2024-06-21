@@ -1,5 +1,5 @@
 # https://projecteuler.net/problem=81
-from lib import initialize, msg, conclude
+from lib import initialize, msg, conclude, correct_path_and_name
 import time
 
 if __name__ == '__main__':
@@ -10,7 +10,7 @@ if __name__ == '__main__':
 
         def init():
             result_array = []
-            fileHandler = open('data/project_euler_81_input.txt')
+            fileHandler = open(correct_path_and_name('project_euler_81_input.txt'))
             for line in fileHandler:
                 result_array.append(line.split(","))
             return result_array

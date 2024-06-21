@@ -1,0 +1,13 @@
+{
+    "problem": "10",
+    "expected": "142913828922",
+    "actual": "142913828922",
+    "duration": "0.015626192092895508",
+    "output": [
+        "Running solution for problem: 10",
+        "Expected result: 142913828922",
+        "Sum of all values below 2000000 is 142913828922",
+        "Solution found: 142913828922"
+    ],
+    "passed": "True"
+}

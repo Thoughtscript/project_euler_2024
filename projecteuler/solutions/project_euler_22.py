@@ -1,5 +1,5 @@
 # https://projecteuler.net/problem=22
-from lib import initialize, msg, conclude
+from lib import initialize, msg, conclude, correct_path_and_name
 import time
 
 if __name__ == '__main__':
@@ -41,7 +41,7 @@ if __name__ == '__main__':
             ALGO_BEGIN = time.time()
 
             stringData = ""
-            fileHandler = open('data/project_euler_22_input.txt')
+            fileHandler = open(correct_path_and_name('project_euler_22_input.txt'))
             for line in fileHandler:
                 stringData += line
 

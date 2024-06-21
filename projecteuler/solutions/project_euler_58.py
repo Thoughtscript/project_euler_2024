@@ -40,7 +40,6 @@ from lib import initialize, msg, conclude
 import time
 from data import primes_to_700_mil_map
 
-
 if __name__ == '__main__':
 
     try:   

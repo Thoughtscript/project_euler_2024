@@ -1,5 +1,5 @@
 # https://projecteuler.net/problem=59
-from lib import initialize, msg, conclude
+from lib import initialize, msg, conclude, correct_path_and_name
 import time
 
 if __name__ == '__main__':
@@ -10,7 +10,7 @@ if __name__ == '__main__':
         
         def init(file_name, sep):
             stringData = ""
-            fileHandler = open(file_name)
+            fileHandler = open(correct_path_and_name(file_name))
             for line in fileHandler:
                 stringData += line.replace('"', '')
 
@@ -18,7 +18,7 @@ if __name__ == '__main__':
             return result
 
         def solve():
-            inputs = init('data/project_euler_59_input.txt',",")
+            inputs = init('project_euler_59_input.txt',",")
             keys = []
 
             for a in range(97, 123, 1):

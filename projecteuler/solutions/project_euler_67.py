@@ -1,5 +1,5 @@
 # https://projecteuler.net/problem=67
-from lib import initialize, conclude
+from lib import initialize, conclude, correct_path_and_name
 import time
 
 if __name__ == '__main__':
@@ -10,7 +10,7 @@ if __name__ == '__main__':
 
         def parse(file_name):
             result_arr = []
-            file_handler = open(file_name)
+            file_handler = open(correct_path_and_name(file_name))
 
             for line in file_handler:
                 cleaned = line.replace('\n', '').split(" ")

@@ -20,17 +20,17 @@ A dockerized container is provided as a last resort (for those finding it diffic
 docker-compose up
 ```
 
-Static File Server:
+Project Euler recommends that solutions be able to run in a `~2-3-minute` timeframe (duration `120` to `180`) but some dependencies may take a long time to load.
+
+> You can also see the outputs [here](/projecteuler/solutions/out) along with the actual runtimes that you can verify locally.
+
+Static File Server to eventually display like: 
 
 > http://localhost:8000/public/index.html
 
 Execute the Solutions within the container:
 
 > http://localhost:8000/api/execute?problem=30
-
-Project Euler recommends that solutions be able to run in a ~2-3-minute timeframe (`120` to `180`) but some dependencies may take a long time to load.
-
-You can see the outputs [here](/projecteuler/solutions/out) along with the actual runtimes that you can verify locally.
 
 ### Local
 

@@ -1,5 +1,6 @@
 import time
 import json
+import os
 
 '''
 PRIME NUMBERS
@@ -94,6 +95,15 @@ INPUT FILES
 '''
 import json
 
+def correct_path_and_name(file_name):
+    file_path = 'data/'
+    if os.path.exists(file_path):
+        return file_path + file_name
+    
+    file_path = 'solutions/data/'
+    if os.path.exists(file_path):
+        return file_path + file_name
+
 def load_json_file(file_name, do_print=False):
     jsonAsString = ""
 
@@ -140,6 +150,12 @@ def initialize(problem = -1, expected = -1, actual = -1, duration = 0, output = 
 def msg(result_data, message):
     result_data['output'].append(message)
 
+def check_path_exist(file_path, file_name, parsed):
+    if os.path.exists(file_path):
+        result_data_json = open(file_path + file_name, 'w')
+        result_data_json.write(json.dumps(parsed, indent=4))
+        result_data_json.close()
+
 def print_result_data_json(result_data):
     result_data_temp = result_data
     result_data_temp["problem"] = str(result_data_temp["problem"])
@@ -151,10 +167,10 @@ def print_result_data_json(result_data):
     result_data_as_string = str(result_data_temp)
     result_data_as_string = result_data_as_string.replace("'", "\"")
     parsed = json.loads(result_data_as_string)
+    file_name = 'project_euler_' + str(result_data['problem']) + '.json'
 
-    result_data_json = open('out/project_euler_' + str(result_data['problem']) + '.json', 'w')
-    result_data_json.write(json.dumps(parsed, indent=4))
-    result_data_json.close()
+    check_path_exist('out/', file_name, parsed) # local
+    check_path_exist('solutions/out/', file_name, parsed) # from relative path of executed Bash command
 
 def conclude(result_data, solution, begin):
     ALGO_END = time.time()

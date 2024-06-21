@@ -1,6 +1,6 @@
 # https://projecteuler.net/problem=89
 # From my solution: https://www.codewars.com/kata/51b66044bce5799a7f000003/train/javascript
-from lib import initialize, msg, conclude
+from lib import initialize, msg, conclude, correct_path_and_name
 import time
 
 if __name__ == '__main__':
@@ -159,7 +159,7 @@ if __name__ == '__main__':
         def init(file_name):
             result_arr = []
 
-            file_handler = open(file_name)
+            file_handler = open(correct_path_and_name(file_name))
 
             for line in file_handler:
                 cleaned = line.replace('\n', '')

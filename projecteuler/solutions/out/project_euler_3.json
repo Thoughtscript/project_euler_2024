@@ -2,7 +2,7 @@
     "problem": "3",
     "expected": "6857",
     "actual": "6857.0",
-    "duration": "0.0",
+    "duration": "0.005469560623168945",
     "output": [
         "Running solution for problem: 3",
         "Expected result: 6857",

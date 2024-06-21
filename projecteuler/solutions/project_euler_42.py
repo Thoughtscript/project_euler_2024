@@ -1,5 +1,5 @@
 # https://projecteuler.net/problem=42
-from lib import initialize, msg, conclude
+from lib import initialize, msg, conclude, correct_path_and_name
 import time
 
 if __name__ == '__main__':
@@ -47,7 +47,7 @@ if __name__ == '__main__':
 
         def init():
             stringData = ""
-            fileHandler = open('data/project_euler_42_input.txt')
+            fileHandler = open(correct_path_and_name('project_euler_42_input.txt'))
             for line in fileHandler:
                 stringData += line.replace('"', '')
 
