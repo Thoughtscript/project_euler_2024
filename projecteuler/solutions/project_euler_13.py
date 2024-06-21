@@ -1,5 +1,5 @@
 # https://projecteuler.net/problem=13
-from lib import initialize, conclude, load_json_file, sum_list
+from lib import initialize, conclude, load_json_file, sum_list, correct_path_and_name
 import time
 
 if __name__ == '__main__':
@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
             conclude(result_data, sum, ALGO_BEGIN)
 
-        solve(load_json_file('data/project_euler_13_data')) # 5537376230390876637302048746832985971773659831892672
+        solve(load_json_file(correct_path_and_name('project_euler_13_data'))) # 5537376230390876637302048746832985971773659831892672
         
     except Exception as ex:
 

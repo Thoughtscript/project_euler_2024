@@ -1,0 +1,16 @@
+{
+    "problem": "38",
+    "expected": "932718654",
+    "actual": "932718654",
+    "duration": "0.4857149124145508",
+    "output": [
+        "Running solution for problem: 38",
+        "Expected result: 932718654",
+        "New Pandigital multiple found! 918273645",
+        "New Pandigital multiple found! 926718534",
+        "New Pandigital multiple found! 927318546",
+        "New Pandigital multiple found! 932718654",
+        "Solution found: 932718654"
+    ],
+    "passed": "True"
+}

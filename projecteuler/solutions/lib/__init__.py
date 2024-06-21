@@ -75,15 +75,15 @@ def number_of_divisors(max_num, do_print=False):
         n = prime_factors[x]
 
         if not hm.get(n) is None:
-            hm[n] = hm[n] + 1
+            hm[n] += 1
         else:
             hm[n] = 1
 
-    keys = hm.keys()
+    keys = list(hm.keys())
             
     for x in range(0, len(keys), 1):
         n = hm[keys[x]]
-        result = result * (n + 1)
+        result *= (n + 1)
 
     if do_print:
         print(result)

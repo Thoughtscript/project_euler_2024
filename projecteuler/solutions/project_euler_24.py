@@ -1,5 +1,5 @@
 # https://projecteuler.net/problem=24
-from lib import initialize, msg, conclude
+from lib import initialize, conclude
 import time
 
 if __name__ == '__main__':

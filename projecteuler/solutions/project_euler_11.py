@@ -1,5 +1,5 @@
 # https://projecteuler.net/problem=11
-from lib import initialize, msg, conclude, load_json_file
+from lib import initialize, msg, conclude, load_json_file, correct_path_and_name
 import time
 
 if __name__ == '__main__':
@@ -196,7 +196,7 @@ if __name__ == '__main__':
 
             conclude(result_data, mx, ALGO_BEGIN)
 
-        solve(load_json_file('data/project_euler_11_data'))
+        solve(load_json_file(correct_path_and_name('project_euler_11_data')))
 
     except Exception as ex:
 

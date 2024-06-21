@@ -1,0 +1,22 @@
+{
+    "problem": "21",
+    "expected": "31626",
+    "actual": "31626",
+    "duration": "5.371576547622681",
+    "output": [
+        "Running solution for problem: 21",
+        "Expected result: 31626",
+        "Amicable Pair found: 220 284 sum 504",
+        "Pair already found",
+        "Amicable Pair found: 1184 1210 sum 2898",
+        "Pair already found",
+        "Amicable Pair found: 2620 2924 sum 8442",
+        "Pair already found",
+        "Amicable Pair found: 5020 5564 sum 19026",
+        "Pair already found",
+        "Amicable Pair found: 6232 6368 sum 31626",
+        "Pair already found",
+        "Solution found: 31626"
+    ],
+    "passed": "True"
+}
