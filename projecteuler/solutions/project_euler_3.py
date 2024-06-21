@@ -50,8 +50,8 @@ if __name__ == '__main__':
                     if 600851475143 % x == 0:
                         conclude(result_data, x, ALGO_BEGIN)
                         return
-
-        solve(first_clean_divide(600851475143, 100000000))
+ 
+        solve(first_clean_divide(600851475143, 100000000)) # 6857
 
     except Exception as ex:
 

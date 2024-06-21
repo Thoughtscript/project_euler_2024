@@ -1,0 +1,13 @@
+{
+    "problem": "206",
+    "expected": "1389019170",
+    "actual": "1389019170",
+    "duration": "20.374204635620117",
+    "output": [
+        "Running solution for problem: 206",
+        "Expected result: 1389019170",
+        "Solution found: 1389019170 is the square root of 1929374254627488900",
+        "Solution found: 1389019170"
+    ],
+    "passed": "True"
+}
