@@ -1,0 +1,20 @@
+{
+    "problem": "43",
+    "expected": "16695334890",
+    "actual": "16695334890",
+    "duration": "1.0582122802734375",
+    "output": [
+        "Running solution for problem: 43",
+        "Expected result: 16695334890",
+        "Pandigital Number made: 1406357289",
+        "Pandigital Number made: 1430952867",
+        "Pandigital Number made: 1460357289",
+        "Pandigital Number made: 4106357289",
+        "Pandigital Number made: 4130952867",
+        "Pandigital Number made: 4160357289",
+        "Number of Pandigital Numbers is: 6",
+        "Sum is: 16695334890",
+        "Solution found: 16695334890"
+    ],
+    "passed": "True"
+}

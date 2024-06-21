@@ -1,0 +1,23 @@
+{
+    "problem": "41",
+    "expected": "7652413",
+    "actual": "7652413",
+    "duration": "1.0612969398498535",
+    "output": [
+        "Running solution for problem: 41",
+        "Expected result: 7652413",
+        "21 skipped since it is lower than: 1234 during heaps",
+        "12 skipped since it is lower than: 1234 during heaps",
+        "321 skipped since it is lower than: 1234 during heaps",
+        "231 skipped since it is lower than: 1234 during heaps",
+        "132 skipped since it is lower than: 1234 during heaps",
+        "312 skipped since it is lower than: 1234 during heaps",
+        "213 skipped since it is lower than: 1234 during heaps",
+        "123 skipped since it is lower than: 1234 during heaps",
+        "1234 skipped since it is lower than: 1234 during heaps",
+        "New Largest Prime Pandigital found: 4231",
+        "New Largest Prime Pandigital found: 7652413",
+        "Solution found: 7652413"
+    ],
+    "passed": "True"
+}

@@ -176,3 +176,15 @@ def sum_list(lst):
         total += int(lst[x])
 
     return total
+
+# Primarily for converting an Array of Prime Numbers (converted via the above) to a Map for O(1) lookup
+def list_to_map(lst, do_print = False):
+    mp = {}
+
+    for x in range(0, len(lst), 1):
+        mp[lst[x]] = True
+            
+    if do_print:
+        print(mp)
+
+    return mp

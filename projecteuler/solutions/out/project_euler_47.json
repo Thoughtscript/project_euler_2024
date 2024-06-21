@@ -1,0 +1,22 @@
+{
+    "problem": "47",
+    "expected": "134043",
+    "actual": "134043",
+    "duration": "0.911247968673706",
+    "output": [
+        "Running solution for problem: 47",
+        "Expected result: 134043",
+        "Trying: 134035 134036 134037 134038",
+        "Trying: 134036 134037 134038 134039",
+        "Trying: 134037 134038 134039 134040",
+        "Trying: 134038 134039 134040 134041",
+        "Trying: 134039 134040 134041 134042",
+        "Trying: 134040 134041 134042 134043",
+        "Trying: 134041 134042 134043 134044",
+        "Trying: 134042 134043 134044 134045",
+        "Trying: 134043 134044 134045 134046",
+        "First four consecutive integers found with at least four distinct prime factors!",
+        "Solution found: 134043"
+    ],
+    "passed": "True"
+}

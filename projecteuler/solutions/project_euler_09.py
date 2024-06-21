@@ -1,5 +1,5 @@
 # https://projecteuler.net/problem=9
-from lib import initialize, msg, conclude, load_json_file
+from lib import initialize, msg, conclude
 import time
 
 if __name__ == '__main__':

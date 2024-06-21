@@ -29,3 +29,9 @@ Execute the Solutions locally :
 cd projecteuler/solutions
 python3 project_euler_11.py
 ```
+
+Make Primes locally:
+```bash
+python3 _make_and_print_primes.py --max_num 700000000 --file_name primes_to_700_mil
+python3 _make_and_print_primes.py --max_num 2000000 --file_name primes_to_2_mil
+```
