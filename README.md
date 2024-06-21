@@ -12,6 +12,10 @@ Now with Docker, better standardization, optimization, improved logging, timing,
 
 ## Use
 
+### Docker
+
+A dockerized container is provided as a last resort (for those finding it difficult to setup and validate Python 3):
+
 ```bash
 docker-compose up
 ```
@@ -23,6 +27,12 @@ Static File Server:
 Execute the Solutions within the container:
 
 > http://localhost:8000/api/execute?problem=30
+
+Project Euler recommends that solutions be able to run in a ~2-3-minute timeframe (`120` to `180`) but some dependencies may take a long time to load.
+
+You can see the outputs [here](/projecteuler/solutions/out) along with the actual runtimes that you can verify locally.
+
+### Local
 
 Execute the Solutions locally :
 ```bash
