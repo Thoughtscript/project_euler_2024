@@ -160,6 +160,7 @@ if __name__ == '__main__':
 
             for x in range(1,1001,1):
                 nums.append(make_num(x))
+                msg(result_data, make_num(x))
 
             return nums
 
@@ -182,9 +183,9 @@ if __name__ == '__main__':
                 line = line.replace(" ", "")
                 line = line.replace("\n", "")
                 count += len(line)
-                # msg(result_data, line + " " + str(len(line)))
+                msg(result_data, line + " " + str(len(line)))
 
-            msg(result_data, "Adding " + str(2673) + " for 'and's")
+            msg(result_data, "Adding " + str(2673) + " for <ands>")
             conclude(result_data, count + 2673, ALGO_BEGIN)
 
         solve() # 21124

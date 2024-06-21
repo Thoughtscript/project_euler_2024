@@ -24,7 +24,9 @@ if __name__ == '__main__':
             PLAYER_2 = HANDS[5:10]
 
             score_1 = hash_hand(PLAYER_1)
+            msg(result_data, "Player 1 scores " + str(score_1))
             score_2 = hash_hand(PLAYER_2)
+            msg(result_data, "Player 2 scores " + str(score_2))
 
             if score_1[0] > score_2[0]:
                 return 1
@@ -57,6 +59,7 @@ if __name__ == '__main__':
         }
 
         def hash_hand(hand):
+            msg(result_data, "Evaluating hand: [" + str(hand[0]) + "," + str(hand[1]) + "," + str(hand[2]) + "," + str(hand[3]) + "," + str(hand[4]) + "]")
             suits = {}
             cards = {}
 
@@ -69,17 +72,17 @@ if __name__ == '__main__':
                 if suit_check is None:
                     suits[suit_str] = 1
                 else:
-                    suits[suit_str] = suits[suit_str] + 1
+                    suits[suit_str] += 1
                 
                 card_check = cards.get(num_str)
                 if card_check is None:
                     cards[num_str] = 1
                 else:
-                    cards[num_str] = cards[num_str] + 1
+                    cards[num_str] += 1
 
             SUIT_KEYS = list(suits.keys())
             CARD_KEYS = list(cards.keys())
-
+            
             # Arrays
             pairs = []
             singles = []
@@ -123,6 +126,8 @@ if __name__ == '__main__':
 
                 if not is_straight == False and singles[4] == 14:
                     is_royal = True
+
+            msg(result_data, "is_flush " + str(is_flush) + " is_royal " + str(is_royal) + " is_straight " + str(is_straight) + " is_three_kind " + str(is_three_kind) + " is_four_kind " + str(is_four_kind))
 
             """
             SCORE MAP:
@@ -191,10 +196,10 @@ if __name__ == '__main__':
 
             for x in range(0, len(DATA), 1):
                 outcome = score_hands(DATA[x])
-                # msg(result_data, "Player " + str(outcome) + " wins hand!")
+                msg(result_data, "Player " + str(outcome) + " wins hand!")
 
                 if outcome == 1:
-                    player_one_wins_total = player_one_wins_total + 1
+                    player_one_wins_total += 1
 
             msg(result_data, "Player one won: " + str(player_one_wins_total) + " times")
             conclude(result_data, player_one_wins_total, ALGO_BEGIN)

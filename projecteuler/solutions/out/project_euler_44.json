@@ -1,0 +1,15 @@
+{
+    "problem": "44",
+    "expected": "5482660",
+    "actual": "5482660.0",
+    "duration": "39.364505767822266",
+    "output": [
+        "Running solution for problem: 44",
+        "Expected result: 5482660",
+        "First 99999 pentagonals generated!",
+        "New minimized_D found: 5482660.0 for X:1560090.0 Y:7042750.0",
+        "Solution found: 5482660.0",
+        "Solution found: 5482660.0"
+    ],
+    "passed": "True"
+}

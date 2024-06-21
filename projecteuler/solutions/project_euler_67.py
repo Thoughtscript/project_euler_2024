@@ -1,4 +1,4 @@
-# https://projecteuler.net/problem = 67
+# https://projecteuler.net/problem=67
 from lib import initialize, msg, conclude
 import time
 

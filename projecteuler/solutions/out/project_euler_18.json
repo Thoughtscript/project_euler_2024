@@ -1,0 +1,12 @@
+{
+    "problem": "18",
+    "expected": "1074",
+    "actual": "1074",
+    "duration": "0.0",
+    "output": [
+        "Running solution for problem: 18",
+        "Expected result: 1074",
+        "Solution found: 1074"
+    ],
+    "passed": "True"
+}

@@ -1,0 +1,32 @@
+{
+    "problem": "36",
+    "expected": "872187",
+    "actual": "872187",
+    "duration": "0.9284582138061523",
+    "output": [
+        "Running solution for problem: 36",
+        "Expected result: 872187",
+        "Double-base palindrome found: 0",
+        "Double-base palindrome found: 1",
+        "Double-base palindrome found: 3",
+        "Double-base palindrome found: 5",
+        "Double-base palindrome found: 7",
+        "Double-base palindrome found: 9",
+        "Double-base palindrome found: 33",
+        "Double-base palindrome found: 99",
+        "Double-base palindrome found: 313",
+        "Double-base palindrome found: 585",
+        "Double-base palindrome found: 717",
+        "Double-base palindrome found: 7447",
+        "Double-base palindrome found: 9009",
+        "Double-base palindrome found: 15351",
+        "Double-base palindrome found: 32223",
+        "Double-base palindrome found: 39993",
+        "Double-base palindrome found: 53235",
+        "Double-base palindrome found: 53835",
+        "Double-base palindrome found: 73737",
+        "Double-base palindrome found: 585585",
+        "Solution found: 872187"
+    ],
+    "passed": "True"
+}

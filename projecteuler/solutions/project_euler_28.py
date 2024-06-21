@@ -1,5 +1,5 @@
 # https://projecteuler.net/problem=28
-from lib import initialize, conclude, sum_list
+from lib import initialize, conclude, sum_list, msg
 import time
 
 if __name__ == '__main__':
@@ -112,10 +112,10 @@ if __name__ == '__main__':
 
                 lower_left.append(val)
 
-            # msg(result_data, str(upper_right))
-            # msg(result_data, str(lower_right))
-            # msg(result_data, str(upper_left))
-            # msg(result_data, str(lower_left))
+            msg(result_data, str(upper_right))
+            msg(result_data, str(lower_right))
+            msg(result_data, str(upper_left))
+            msg(result_data, str(lower_left))
 
             solution = 1 + sum_list(upper_right) + sum_list(lower_right) + sum_list(lower_left) + sum_list(upper_left)
             conclude(result_data, solution, ALGO_BEGIN)

@@ -49,7 +49,7 @@ Then continue to check through the next primes in the same way until the total a
 
 1. https://cp-algorithms.com/algebra/phi-function.html
 
-'''
+```
 1. Finds all of the coprimes relative to a number.
 2. Can be used to find all maximally reduced proper fractions up to some number n.
-'''
+```

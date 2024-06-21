@@ -16,6 +16,7 @@ if __name__ == '__main__':
             for x in range(2, 101,1):
                 for y in range(2, 101, 1):
                     val = pow(x, y)
+                    msg(result_data, str(val))
                     hm[val] = True
 
             solution = len(hm.values())

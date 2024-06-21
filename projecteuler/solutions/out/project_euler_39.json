@@ -1,0 +1,20 @@
+{
+    "problem": "39",
+    "expected": "840",
+    "actual": "840",
+    "duration": "118.06718611717224",
+    "output": [
+        "Running solution for problem: 39",
+        "Expected result: 840",
+        "New global_max found: 1 for p: 12",
+        "New global_max found: 2 for p: 60",
+        "New global_max found: 3 for p: 120",
+        "New global_max found: 4 for p: 240",
+        "New global_max found: 5 for p: 420",
+        "New global_max found: 6 for p: 720",
+        "New global_max found: 8 for p: 840",
+        "Maxed p found: 840",
+        "Solution found: 840"
+    ],
+    "passed": "True"
+}

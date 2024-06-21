@@ -60,7 +60,7 @@ if __name__ == '__main__':
                     innerSum = innerSum + LETTERS[name[y]]
 
                 score = innerSum * (x + 1)
-                # msg(result_data, "Current Name: " + name + " Inner Sum: " + str(innerSum) + " Name Number: " + str(x+1) + " Score: " + str(score))
+                msg(result_data, "Current Name: " + name + " Inner Sum: " + str(innerSum) + " Name Number: " + str(x+1) + " Score: " + str(score))
                 result += score
 
             conclude(result_data, result, ALGO_BEGIN)

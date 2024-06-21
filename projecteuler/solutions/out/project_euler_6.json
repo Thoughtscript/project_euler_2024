@@ -1,0 +1,14 @@
+{
+    "problem": "6",
+    "expected": "25164150",
+    "actual": "25164150",
+    "duration": "0.0",
+    "output": [
+        "Running solution for problem: 6",
+        "Expected result: 25164150",
+        "sum_of_squares 25502500",
+        "sum_of_squares 338350",
+        "Solution found: 25164150"
+    ],
+    "passed": "True"
+}

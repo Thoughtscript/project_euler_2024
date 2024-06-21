@@ -39,7 +39,7 @@ if __name__ == '__main__':
                     d = datetime.datetime(year, month, 1)
                     if d.strftime('%A') == 'Sunday':
                         count = count + 1
-                        # msg(result_data, "Found: " + str(d) + " is a " + d.strftime('%A'))
+                        msg(result_data, "Found: " + str(d) + " is a " + d.strftime('%A'))
             
             conclude(result_data, count, ALGO_BEGIN)
 

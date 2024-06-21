@@ -27,7 +27,7 @@ if __name__ == '__main__':
                 if (temp > mx):
                     mx = temp
                 
-                # msg(result_data, "String: " + t + " Len: " + str(len(t)) + " Temp val: " + str(temp))
+                msg(result_data, "String: " + t + " Len: " + str(len(t)) + " Temp val: " + str(temp))
 
             msg(result_data, "Max value: " + str(mx))
             conclude(result_data, mx, ALGO_BEGIN)

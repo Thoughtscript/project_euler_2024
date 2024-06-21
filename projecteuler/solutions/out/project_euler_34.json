@@ -1,0 +1,18 @@
+{
+    "problem": "34",
+    "expected": "40730",
+    "actual": "40730",
+    "duration": "0.040998220443725586",
+    "output": [
+        "Running solution for problem: 34",
+        "Expected result: 40730",
+        "Digital factorial found: 1",
+        "Digital factorial found: 2",
+        "Digital factorial found: 145",
+        "Digital factorial found: 40585",
+        "Sum: 40733",
+        "Removing 1! and 2! since they are not sums as stipulated in the question...",
+        "Solution found: 40730"
+    ],
+    "passed": "True"
+}

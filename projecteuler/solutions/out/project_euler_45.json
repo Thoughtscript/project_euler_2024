@@ -1,0 +1,15 @@
+{
+    "problem": "45",
+    "expected": "1533776805",
+    "actual": "1533776805.0",
+    "duration": "0.047100067138671875",
+    "output": [
+        "Running solution for problem: 45",
+        "Expected result: 1533776805",
+        "Number found: 40755.0",
+        "Number found: 1533776805.0",
+        "Next highest number found 1533776805.0",
+        "Solution found: 1533776805.0"
+    ],
+    "passed": "True"
+}

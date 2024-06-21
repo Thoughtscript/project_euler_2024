@@ -12,7 +12,7 @@ if __name__ == '__main__':
             total = 1
 
             for x in range(num, 0, -1):
-                total = total * x
+                total *= x
 
             return total
 

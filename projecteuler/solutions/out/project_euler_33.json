@@ -1,0 +1,17 @@
+{
+    "problem": "33",
+    "expected": "100",
+    "actual": "100",
+    "duration": "0.006997585296630859",
+    "output": [
+        "Running solution for problem: 33",
+        "Expected result: 100",
+        "Non-trivial cancelling fraction found: 16/64",
+        "Non-trivial cancelling fraction found: 19/95",
+        "Non-trivial cancelling fraction found: 26/65",
+        "Non-trivial cancelling fraction found: 49/98",
+        "0.01000 found - taking 1/(0.01000) to return the denominator",
+        "Solution found: 100"
+    ],
+    "passed": "True"
+}

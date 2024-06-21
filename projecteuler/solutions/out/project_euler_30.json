@@ -1,0 +1,20 @@
+{
+    "problem": "30",
+    "expected": "443839",
+    "actual": "443839",
+    "duration": "2.2310914993286133",
+    "output": [
+        "Running solution for problem: 30",
+        "Expected result: 443839",
+        "Sum of 5 powers found 0",
+        "Sum of 5 powers found 1",
+        "Sum of 5 powers found 4150",
+        "Sum of 5 powers found 4151",
+        "Sum of 5 powers found 54748",
+        "Sum of 5 powers found 92727",
+        "Sum of 5 powers found 93084",
+        "Sum of 5 powers found 194979",
+        "Solution found: 443839"
+    ],
+    "passed": "True"
+}
