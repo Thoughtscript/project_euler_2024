@@ -1,0 +1,13 @@
+{
+    "problem": "112",
+    "expected": "1587000",
+    "actual": "1587000",
+    "duration": "3.511990785598755",
+    "output": [
+        "Running solution for problem: 112",
+        "Expected result: 1587000",
+        "Number found: 1587000 ratio: 0.99",
+        "Solution found: 1587000"
+    ],
+    "passed": "True"
+}
