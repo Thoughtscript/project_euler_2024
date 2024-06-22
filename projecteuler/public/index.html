@@ -26,12 +26,266 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!--
     ********************************************************************************
-    *                                   PARCEL STYLING                            *
+    *                                   STYLING                            *
     ********************************************************************************
     -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        html, body, main {
+          padding: 0;
+          top: 0;
+          left: 0;
+          margin: 0;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+
+          overflow-x: hidden;
+        }
+
+        main, nav, footer {
+          font-family: "Roboto", sans-serif;
+        }
+          
+        div#wrapper {
+          position: relative;
+          left: 25%;
+          width: 50%;
+          top: 15%;
+        }
+
+        div#grid {
+          width: 60%;
+          height: 50%;
+          flex-wrap: wrap;
+          display: inline-flex;
+        }
+
+        a.grid-element {
+          height: 35.5px;
+          width: 35.5px;
+          border: 1px solid black;
+          margin: 3px;
+          text-align: center;
+          justify-content: center;
+          align-content: center;
+          border-radius:2px;
+          box-shadow: 1px 2px 2px 1px lightgray;
+        }
+
+        .solved.OK {
+          background: green;
+          color: lightgreen;
+          border: 1px solid lightgreen;
+        }
+
+        .solved.SLOW {
+          background: yellowgreen;
+          color: green;
+          border: 1px solid yellowgreen;
+        }
+
+        .solved.VERY_SLOW {
+          background: orangered;
+          color: yellow;
+          border: 1px solid orangered;
+        }
+
+        .solved.LOOKUP {
+          background: royalblue;
+          color: lightskyblue;
+          border: 1px solid royalblue;
+        }
+
+        .solved.PRECOMPUTE {
+          background: black;
+          color: white;
+          border: 1px solid black;
+        }
+
+        div#key {
+          position: relative;
+          top: 300px;
+          left: 25%;
+          width: 500px;
+        }
+
+        div#key > div.key {
+          width: 205px;
+          padding: 12.5px;
+          border-radius: 25px;
+          margin: 5px;
+        }
+
+        nav > h1 {
+          text-transform: uppercase;
+          letter-spacing: 5px;
+          font-size: 35px;
+          text-shadow: 2px 2px lightgray;
+        }
+
+        nav {
+          position: relative;
+          left: 5%;
+          width: 90%;
+          border-bottom: 1px solid lightgray;
+        }
+
+        footer {
+          position: relative;
+          left: 5%;
+          width: 90%;
+          top: 900px;
+        }
+
+        footer > ul {
+          list-style: none;
+        }
+
+        footer > ul > li {
+          margin: 3px;
+        }
+
+        footer > ul > li > a {
+          text-transform: lowercase;
+          letter-spacing: 5px;
+          text-decoration: none;
+        }
+
+        footer > ul > li > a:hover {
+          opacity: .6;
+        }
+    </style>
 
   </head>
   <body>
+    <nav>
+      <h1>My Solved Project Euler Problems</h1>
+    </nav>
 
+    <main>
+        <div id="wrapper">
+          <div id="grid"></div>
+        </div>
+
+        <div id="key">
+          <div class="solved OK key">SOLVED - OK</div>
+          <div class="solved SLOW key">SOLVED - SLOW</div>
+          <div class="solved VERY_SLOW key">SOLVED - VERY_SLOW</div>
+          <div class="solved LOOKUP key">SOLVED - LOOKUP</div>
+          <div class="solved PRECOMPUTE key">SOLVED - PRECOMPUTE</div>
+        </div>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="https://projecteuler.net/profile/Thoughtscript.png">Profile</a>
+        </li>
+        <li>
+          <a href="https://github.com/Thoughtscript/project_euler_2024">GitHub</a>
+        </li>
+        <li>
+          <a href="http://localhost:8000/api/execute?problem=1">API</a>
+        </li>
+      </ul>
+    </footer>
   </body>
+
+   <!--
+    ********************************************************************************
+    *                                   SCRIPTS                                    *
+    ********************************************************************************
+    -->
+    <script type="application/json" id="solved_list">
+      [
+        [1, "solved", "OK"],
+        [2, "solved", "OK"],
+        [3, "solved", "OK"],
+        [4, "solved", "OK"],
+        [5, "solved", "OK"],
+        [6, "solved", "OK"],
+        [7, "solved", "OK"],
+        [8, "solved", "OK"],
+        [9, "solved", "OK"],
+        [10, "solved", "OK"],
+        [11, "solved", "OK"],
+        [12, "solved", "OK"],
+        [13, "solved", "OK"],
+        [14, "solved", "OK"],
+        [15, "solved", "OK"],
+        [16, "solved", "OK"],
+        [17, "solved", "OK"],
+        [18, "solved", "OK"],
+        [19, "solved", "OK"],
+        [20, "solved", "OK"],
+        [21, "solved", "OK"],
+        [22, "solved", "OK"],
+        [23, "solved", "OK"],
+        [24, "solved", "SLOW"],
+        [25, "solved", "OK"],
+        [26, "solved", "OK"],
+        [27, "solved", "OK"],
+        [28, "solved", "OK"],
+        [29, "solved", "OK"],
+        [30, "solved", "OK"],
+        [31, "solved", "LOOKUP", "integer partitions"],
+        [32, "solved", "OK"],
+        [33, "solved", "OK"],
+        [34, "solved", "OK"],
+        [35, "solved", "OK"],
+        [36, "solved", "OK"],
+        [37, "solved", "OK"],
+        [38, "solved", "OK"],
+        [39, "solved", "SLOW"],
+        [40, "solved", "OK"],
+        [41, "solved", "OK"],
+        [42, "solved", "OK"],
+        [43, "solved", "OK"],
+        [44, "solved", "OK"],
+        [45, "solved", "OK"],
+        [46, "solved", "OK"],
+        [47, "solved", "OK"],
+        [48, "solved", "OK"],
+        [49, "solved", "OK"],
+        [50, "solved", "OK"],
+        [52, "solved", "OK"],
+        [54, "solved", "OK"],
+        [56, "solved", "OK"],
+        [57, "solved", "OK"],
+        [58, "solved", "OK"],
+        [59, "solved", "OK"],
+        [63, "solved", "OK"],
+        [67, "solved", "OK"],
+        [70, "solved", "LOOKUP", "totients"],
+        [73, "solved", "PRECOMPUTE", "with precomputing pal cons sqs"],
+        [79, "solved", "OK"],
+        [81, "solved", "OK"],
+        [89, "solved", "OK"],
+        [92, "solved", "OK"],
+        [96, "solved", "OK"],
+        [97, "solved", "OK"],
+        [112, "solved", "OK"],
+        [125, "solved", "VERY_SLOW"],
+        [206, "solved", "OK"],
+        [808, "solved", "OK"]
+      ]
+    </script>
+    <script>
+      window.onload = function () {
+        var DATA = JSON.parse(document.getElementById("solved_list").innerHTML)
+        var G = document.getElementById("grid")
+
+        for (let i = 0; i < DATA.length; i++) {
+            var A = document.createElement("a")
+            A.className = `grid-element ${DATA[i][1]} ${DATA[i][2]}`
+            A.textContent = DATA[i][0]
+            if (DATA[i][3]) A.title = DATA[i][3]
+            A.href=`https://projecteuler.net/problem=${DATA[i][0]}`
+            G.appendChild(A)
+        }
+      }
+    </script>
+
 </html>
