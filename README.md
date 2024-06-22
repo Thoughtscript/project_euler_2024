@@ -4,7 +4,7 @@
 
 ![Badge](https://projecteuler.net/profile/Thoughtscript.png)
 
-My Project Euler solutions.
+My Project Euler solutions. Wasn't a Math Major but really enjoy Mathematical Logic (from my Philosophy background) and came to enjoy Math later in life!
 
 Now with Docker, better standardization, optimization, improved logging, timing, validation of compatibility with Python 3.12+, vastly reduced file-sizes, and so on.
 
@@ -31,6 +31,10 @@ Static File Server to eventually display results like [Stephan Brumme](https://e
 Execute the Solutions within the container:
 
 > http://localhost:8000/api/execute?problem=30
+
+The default number of `uvicorn` workers is set to [4](./projecteuler/dockerfile) so one can execute multiple Solutions simultaneously in a non-blocking way. Feel free to modify those settings.
+ 
+If you need to disable the initial Prime Number generators comment out the respective lines [here](./projecteuler/bin/make_primes.sh).
 
 ### Local
 
