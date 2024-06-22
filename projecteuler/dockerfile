@@ -17,4 +17,5 @@ RUN python3 -m pip install -r requirements.txt
 
 RUN bash bin/make_primes.sh
 
-CMD [ "uvicorn", "main:app", "--host", "0.0.0.0"]
+# https://fastapi.tiangolo.com/deployment/server-workers/
+CMD [ "uvicorn", "main:app", "--host", "0.0.0.0", "--workers", "4"]

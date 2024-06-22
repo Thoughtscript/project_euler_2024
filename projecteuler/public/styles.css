@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html, body, main {
+  padding: 0;
+  top: 0;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  overflow-x: hidden;
+}
+
+main, nav, footer {
+  font-family: "Roboto", sans-serif;
+}
+  
+div#wrapper {
+  position: relative;
+  left: 32.5%;
+  width: 50%;
+  top: 15%;
+}
+
+div#grid {
+  width: 60%;
+  height: 50%;
+  flex-wrap: wrap;
+  display: inline-flex;
+}
+
+a.grid-element {
+  height: 35.5px;
+  width: 35.5px;
+  border: 1px solid black;
+  margin: 3px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  border-radius:2px;
+  box-shadow: 1px 2px 2px 1px lightgray;
+}
+
+.solved.OK {
+  background: green;
+  color: lightgreen;
+  border: 1px solid lightgreen;
+}
+
+.solved.SLOW {
+  background: yellowgreen;
+  color: green;
+  border: 1px solid yellowgreen;
+}
+
+.solved.VERY_SLOW {
+  background: orangered;
+  color: yellow;
+  border: 1px solid orangered;
+}
+
+.solved.LOOKUP {
+  background: royalblue;
+  color: lightskyblue;
+  border: 1px solid royalblue;
+}
+
+.solved.PRECOMPUTE {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+
+div#key {
+  position: relative;
+  top: 225px;
+  left: 32.5%;
+  width: 500px;
+}
+
+div#key > div.key {
+  width: 140px;
+  padding: 12.5px;
+  border-radius: 25px;
+  margin: 5px;
+  font-size: 12px;
+}
+
+nav > h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 35px;
+  text-shadow: 2px 2px lightgray;
+}
+
+nav {
+  position: relative;
+  left: 5%;
+  width: 90%;
+  border-bottom: 1px solid lightgray;
+}
+
+footer {
+  position: relative;
+  left: 5%;
+  width: 90%;
+  top: 650px;
+  padding-bottom: 50px;
+}
+
+footer > ul {
+  list-style: none;
+}
+
+footer > ul > li {
+  margin: 3px;
+}
+
+footer > ul > li > a {
+  text-transform: lowercase;
+  letter-spacing: 5px;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: .6;
+}

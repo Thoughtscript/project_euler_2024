@@ -16,7 +16,7 @@
     *                                   DESCRIPTION                                *
     ********************************************************************************
     -->
-    <title>My Project Euler Solutions</title>
+    <title>Solution API</title>
     <meta name="description" content="">
     <!--
     ********************************************************************************
@@ -34,21 +34,13 @@
   </head>
   <body>
     <nav>
-      <h1>My Project Euler Solutions</h1>
+      <h1>Solution API</h1>
     </nav>
 
     <main>
-        <div id="wrapper">
-          <div id="grid"></div>
-        </div>
-
-        <div id="key">
-          <div class="solved OK key">SOLVED - OK</div>
-          <div class="solved SLOW key">SOLVED - SLOW</div>
-          <div class="solved VERY_SLOW key">SOLVED - VERY_SLOW</div>
-          <div class="solved LOOKUP key">SOLVED - LOOKUP</div>
-          <div class="solved PRECOMPUTE key">SOLVED - PRECOMPUTE</div>
-        </div>
+      <div id="wrapper">
+        <div id="grid"></div>
+      </div>
     </main>
 
     <footer>
@@ -60,7 +52,7 @@
           <a href="https://github.com/Thoughtscript/project_euler_2024">GitHub</a>
         </li>
         <li>
-          <a href="./api.html">API</a>
+          <a href="./index.html">Home</a>
         </li>
       </ul>
     </footer>
@@ -77,12 +69,20 @@
         var G = document.getElementById("grid")
 
         for (let i = 0; i < DATA.length; i++) {
-            var A = document.createElement("a")
-            A.className = `grid-element ${DATA[i][1]} ${DATA[i][2]}`
-            A.textContent = DATA[i][0]
-            if (DATA[i][3]) A.title = DATA[i][3]
-            A.href=`https://projecteuler.net/problem=${DATA[i][0]}`
-            G.appendChild(A)
+          var A = document.createElement("a")
+          A.className = `grid-element ${DATA[i][1]} ${DATA[i][2]}`
+          A.textContent = DATA[i][0]
+
+          if (DATA[i][1] === "solved" && DATA[i][2] !== "VERY_SLOW") {         
+            A.href=`../api/execute?problem=${DATA[i][0]}`
+            A.target="_blank"
+
+          } else {
+            A.disabled = true
+            A.className += ` no-run`
+          }
+
+          G.appendChild(A)
         }
       }
     </script>
