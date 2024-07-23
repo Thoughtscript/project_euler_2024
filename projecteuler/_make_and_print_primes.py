@@ -27,9 +27,18 @@ if __name__ == '__main__':
                 print(primes)
 
             return primes
+        
+        def make_optimized_sieve_arr(max_num, do_print = False):
+            primes = lib.optimized_sieve_of_eratosthenes(max_num, do_print)
+
+            if do_print:
+                print(primes)
+
+            return primes
 
         def make_and_print(max_num, file_name):
-            prime_arr = make_sieve_arr(max_num, False)
+            #prime_arr = make_sieve_arr(max_num, False)
+            prime_arr = make_optimized_sieve_arr(max_num, False)
             arr_file = open('solutions/data/' + file_name + '_arr.py', 'w')
             arr_file.write("primes=" + str(prime_arr)) # Make it easy to load
             arr_file.close()

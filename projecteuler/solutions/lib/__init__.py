@@ -39,6 +39,28 @@ def sieve_of_eratosthenes(max_num, do_print=False):
 
     return sieve
 
+def optimized_sieve_of_eratosthenes(max_num, do_print=False):
+    sieve = [0] * max_num
+    sieve[0] = False
+    sieve[1] = True
+    primes = [2]
+    
+    # Prepopulate 2 and only check odds
+    for x in range(3, max_num+1, 2):       
+        # Note that 0 is 0 // True
+        # But False is 0 // False
+        if sieve[x-1] == 0 and not sieve[x-1] is False:
+            sieve[x-1] = True
+            primes.append(x)
+
+        for y in range(x*x, max_num+1, 2*x):
+            sieve[y-1] = False
+
+    if do_print:
+        print(sieve)
+
+    return primes
+
 # Offset num by one when accessing
 def prime_factorization(max_num, do_print=False):
     primes = sieve_of_eratosthenes(max_num, do_print)
