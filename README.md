@@ -60,7 +60,7 @@ python3 _make_and_print_primes.py --max_num 700000000 --file_name primes_to_700_
 
 Do be forewarned that Memory (RAM, Volatile) use might be quite high depending on the approach you choose to take:
 
-1. The generated file `primes_to_700_mil_map.py` is about `520mb` and can be run quickly locally if you run the provided [Bash](./projecteuler/bin/make_primes.sh) script outside of Docker:  
+1. The generated file `primes_to_700_mil_map.py` is about `520mb` and can be quickly run if you execute the provided [Bash](./projecteuler/bin/make_primes.sh) script outside of Docker:  
    * Running a problem that loads that dependency (such as [problem 58](./projecteuler/solutions//project_euler_58.py)) is very quick outside of Docker but might be very slow within Docker.
    * Should only peak at about `3GB`.
 1. Your mileage might vary based on other settings/configurations including **Docker**, **Windows Linux Subsystem**:
