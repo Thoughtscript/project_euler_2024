@@ -54,7 +54,7 @@ DATA = [
     [55, "solved", "OK"],
     [56, "solved", "OK"],
     [57, "solved", "OK"],
-    [58, "solved", "OK"],
+    [58, "solved", "VERY_SLOW"],
     [59, "solved", "OK"],
     [63, "solved", "OK"],
     [67, "solved", "OK"],
