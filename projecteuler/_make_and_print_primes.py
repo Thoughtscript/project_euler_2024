@@ -10,7 +10,7 @@ if __name__ == '__main__':
         parser.add_argument('--file_name')  
         args = parser.parse_args()
 
-        print("Arguments received: [ max_num: " + str(args.max_num) + " file_name: " + str(args.file_name) + "]")
+        print("Arguments received python _make_and_print_primes.py --max_num 1000000000 &: [ max_num: " + str(args.max_num) + " file_name: " + str(args.file_name) + "]")
 
         '''
         SIEVE HELPERS

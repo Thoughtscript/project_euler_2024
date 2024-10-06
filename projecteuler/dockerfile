@@ -15,7 +15,7 @@ RUN python3 -m pip install --upgrade pip
 # download dependencies to the image and container
 RUN python3 -m pip install -r requirements.txt
 
-RUN bash bin/make_primes.sh
+RUN bash bin/init_nums.sh
 
 # https://fastapi.tiangolo.com/deployment/server-workers/
 CMD [ "uvicorn", "main:app", "--host", "0.0.0.0", "--workers", "4"]
