@@ -4,6 +4,7 @@ Picked up the following for fun:
 1. https://projecteuler.net/problem=853
 2. https://www.codewars.com/kata/65de16794ccda6356de32bfa
 3. https://www.codewars.com/kata/5f1360c4bc96870019803ae2
+4. https://projecteuler.net/problem=854
 
 I really don't like *just* copy-pasting others' answers - and most I've seen would neverthless fail **3.** (the easiest) anyway.
 
