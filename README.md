@@ -18,6 +18,9 @@ A dockerized container is provided as a last resort (for those finding it diffic
 
 ```bash
 docker-compose up
+
+# If using Docker Compose Engine V2:
+docker compose up
 ```
 
 Project Euler recommends that solutions be able to run in a `~2-3-minute` timeframe (duration `120` to `180`) but some dependencies may take a long time to load.
