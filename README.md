@@ -55,7 +55,7 @@ python3 _make_and_print_primes.py --max_num 50000000 --file_name primes_to_50_mi
 python3 _make_and_print_primes.py --max_num 100000000 --file_name primes_to_100_mil
 python3 _make_and_print_primes.py --max_num 700000000 --file_name primes_to_700_mil 
 
-# This can take between 5-20 minutes depending on your hardward/configuration.
+# This can take between 5-20 minutes depending on your hardware/configuration.
 ```
 
 > This is the same kind of approach most of the "Big Dogs" take W.R.T. prime factor/number calculations - one can use whatever library they like to complete the problems in the spirit and intent of Project Euler and many folks pregenerate prime numbers Ahead-of-Time (AOT precomputation) thereby.
