@@ -57,6 +57,7 @@ DATA = [
     [58, "solved", "VERY_SLOW"],
     [59, "solved", "OK"],
     [63, "solved", "OK"],
+    [65, "solved", "LOOKUP", "euler continued fraction expansions"],
     [67, "solved", "OK"],
     [70, "solved", "LOOKUP", "totients"],
     [73, "solved", "PRECOMPUTE", "with precomputing pal cons sqs"],
