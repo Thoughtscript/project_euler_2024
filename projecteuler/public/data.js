@@ -50,6 +50,7 @@ DATA = [
     [49, "solved", "OK"],
     [50, "solved", "OK"],
     [52, "solved", "OK"],
+    [53, "solved", "OK"],
     [54, "solved", "OK"],
     [55, "solved", "OK"],
     [56, "solved", "OK"],
