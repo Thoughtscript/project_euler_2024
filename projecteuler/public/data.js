@@ -72,5 +72,6 @@ DATA = [
     [125, "solved", "VERY_SLOW"],
     [206, "solved", "OK"],
     [808, "solved", "OK"],
+    [836, "solved", "OK"],
     [853, "solved", "PRECOMPUTE", "with precomputing pisano 120"]
 ]
