@@ -71,6 +71,7 @@ DATA = [
     [112, "solved", "OK"],
     [125, "solved", "VERY_SLOW"],
     [206, "solved", "OK"],
+    [719, "solved", "VERY_SLOW", "ChatGPT suggested the Cut Algorithm"],
     [808, "solved", "OK"],
     [836, "solved", "OK"],
     [853, "solved", "PRECOMPUTE", "with precomputing pisano 120"]
