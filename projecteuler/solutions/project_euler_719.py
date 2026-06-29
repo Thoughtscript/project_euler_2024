@@ -50,9 +50,12 @@ if __name__ == '__main__':
             results = []
 
             for r in range(n):
+                # Did not see this...
                 for cuts in combinations(range(1, n), r):
-                    boundaries = (0,) + cuts + (n,)
+                    boundaries = (0,) + cuts + (n,) ## nor this!!
 
+                    # ChatGPT likes Yield and Generators but those aren't great for caching.
+                    ## Rewrote this but it's still mostly ChatGPT's baby...
                     inner_results = []
                     for idx in range(len(boundaries) - 1):
                         inner_results.append((boundaries[idx], boundaries[idx + 1]))
@@ -80,6 +83,7 @@ if __name__ == '__main__':
 
             for partition in splits:
                 inner_total = 0
+                ## ... this is how to use the above as a number val
                 for i, j in partition:
                     inner_total += int(perfect_square_str[i:j])
 
@@ -109,7 +113,7 @@ if __name__ == '__main__':
 
             conclude(result_data, solution_result, ALGO_BEGIN)
 
-        solve()
+        solve() #128088830547982
 
     except Exception as ex:
 
