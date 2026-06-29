@@ -43,8 +43,7 @@ if __name__ == '__main__':
         Solution
         '''
 
-        # Must generate these before to meet absolute execution time requirements.
-        ## I know of no named algorithm that generates cuts ("Dedekind"-style) generalized for every n.
+        # I know of no named algorithm that generates cuts ("Dedekind"-style) generalized for every n.
         ## ChatGPT generated this method and I modified it slightly.
         def find_all_splits(n):
             msg(result_data, "Cut caching generated for length: " + str(n))
@@ -64,6 +63,8 @@ if __name__ == '__main__':
             # msg(results)
             return results
 
+        # Must generate these before to meet absolute execution time requirements...
+        ## Cache it.
         CACHE= {}
             
         def cache_splits():
