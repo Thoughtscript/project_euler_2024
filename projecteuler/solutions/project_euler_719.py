@@ -60,6 +60,8 @@ if __name__ == '__main__':
                     for idx in range(len(boundaries) - 1):
                         inner_results.append((boundaries[idx], boundaries[idx + 1]))
                     
+                    # I added this tiny optimization :)
+                    ## Should discard any ["abcdef..."] since it must be split
                     if len(inner_results) >= 2:
                         results.append(inner_results)
 
