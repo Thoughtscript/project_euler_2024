@@ -53,6 +53,7 @@ if __name__ == '__main__':
                 # Did not see this...
                 for cuts in combinations(range(1, n), r):
                     boundaries = (0,) + cuts + (n,) ## nor this!!
+                    ### I'll be adding this technique to my toolkit!
 
                     # ChatGPT likes Yield and Generators but those aren't great for caching.
                     ## Rewrote this but it's still mostly ChatGPT's baby...
@@ -88,6 +89,9 @@ if __name__ == '__main__':
                 ## ... this is how to use the above as a number val
                 for i, j in partition:
                     inner_total += int(perfect_square_str[i:j])
+                    ## Third optimization
+                    if inner_total > root:
+                        break
 
                 if inner_total == root:
                     return True
