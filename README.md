@@ -12,6 +12,10 @@ Now with Docker, better standardization, optimization, improved logging, timing,
 
 ## Use
 
+> **NOTE:** these are almost entirely original solutions (and are noted when they aren't). A.I. wasn't used to generate solutions (with the exception of Problem [#719](./projecteuler/solutions/project_euler_719.py) to help identify a known named/famous algorithm to "Dedekind Cut all slices concatenated length summing to invariant *n*" - I was expecting the name of an algorithm but got a useful `combinations` suggestion).
+
+In some cases, I looked up required mathematical topics (having never encountered them before and which is encouraged by Project Euler on their [About Page](https://projecteuler.net/)) to spread general mathematics knowledge. The originality, quality, absolute execution time, and so on are described in the supplied [UI/UX](./projecteuler//public/data.js).
+
 ### Docker
 
 A dockerized container is provided as a last resort (for those finding it difficult to setup and validate Python 3):
